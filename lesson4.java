@@ -4,7 +4,7 @@ public class Main
 	public static void main(String[] args) 
 	{
 	    
-	    calculateRectangleArea();
+	    	calculateRectangleArea();
 
 		// Soru 1 _ yarıçapı klavyeden girilen bir dairenin alanını hesaplayan program
 		// area = π.r.r
@@ -24,7 +24,7 @@ public class Main
 	
 	public static void calculateRectangleArea() 
 	{
-	    java.util.Scanner kb = new java.util.Scanner(System.in);
+	    	java.util.Scanner kb = new java.util.Scanner(System.in);
 		int height, width, area;
 		
 		System.out.print("Yüksekliği giriniz: ");
