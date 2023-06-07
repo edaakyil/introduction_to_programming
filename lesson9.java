@@ -16,6 +16,8 @@ public class Main
     System.out.print("Bir sayı giriniz: ");
     a = kb.nextInt();
         
+		// Bir else bir if'e aittir, ortak else diye bir şey yoktur.
+		// Derleyici bir else ile karşılaştığında onu en son if ile eşleştirir.
     if(0 < a) 
       if(a < 100) 
         System.out.println("Sayı 0 ile 100 arasındadır.");
