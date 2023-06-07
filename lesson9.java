@@ -56,4 +56,63 @@ public class Main
     System.out.print("y = " + y);
 	}
 	
+		
+  // Soru _ Klavyeden girilen üç kenar uzunluğunun bir üçgen oluşturup oluşturmadığını ekrana yazdıran program.
+  // a + b > c
+  // a + c > b
+  // b + c > a
+	public static void soru3Ben() {   
+    java.util.Scanner kb = new java.util.Scanner(System.in);
+    int a, b, c, n, m, p;
+    
+    System.out.print("1. kenar uzunluğu: ");
+    a = kb.nextInt();
+    
+    System.out.print("2. kenar uzunluğu: ");
+    b = kb.nextInt();
+    
+    System.out.print("3. kenar uzunluğu: ");
+    c = kb.nextInt();
+        
+    if(a + b <= c)
+      System.out.print("Üçgen oluşturmaz.");
+    else 
+      if(a + c <= b)
+        System.out.print("Üçgen oluşturmaz.");
+      else 
+        if(b + c <= a)
+          System.out.print("Üçgen oluşturmaz.");
+        else
+          System.out.print("Üçgen oluşturur.");
+	}
+	
+  // Soru _ Klavyeden girilen üç kenar uzunluğunun bir üçgen oluşturup oluşturmadığını ekrana yazdıran program.
+  // a + b > c
+  // a + c > b
+  // b + c > a
+	public static void soru3Hoca() {   
+    java.util.Scanner kb = new java.util.Scanner(System.in);
+    int a, b, c, n, m, p;
+    
+    System.out.print("1. kenar uzunluğu: ");
+    a = kb.nextInt();
+    
+    System.out.print("2. kenar uzunluğu: ");
+    b = kb.nextInt();
+    
+    System.out.print("3. kenar uzunluğu: ");
+    c = kb.nextInt();
+        
+    if(a + b > c)
+      if(a + c > b)
+        if(b + c > a)
+          System.out.print("Üçgen oluşturur.");
+        else 
+          System.out.print("Üçgen oluşturmaz.");
+      else 
+        System.out.print("Üçgen oluşturmaz.");
+    else 
+      System.out.print("Üçgen oluşturmaz.");
+	}
+	
 }
