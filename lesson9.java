@@ -115,4 +115,27 @@ public class Main
       System.out.print("Üçgen oluşturmaz.");
 	}
 	
+	// Soru _ Klavyeden girilen üç kenar uzunluğunun bir eşkenar üçgen oluşturup oluşturmadığını ekrana yazdıran program.
+	public static void soru4() {
+    java.util.Scanner kb = new java.util.Scanner(System.in);
+    int a, b, c;
+    
+    System.out.print("1. kenar uzunluğu: ");
+    a = kb.nextInt();
+    
+    System.out.print("2. kenar uzunluğu: ");
+    b = kb.nextInt();
+    
+    System.out.print("3. kenar uzunluğu: ");
+    c = kb.nextInt();
+        
+    if(a == b)
+      if(a == c)
+          System.out.print("Eşkenar Üçgendir.");
+      else
+        System.out.print("Eşkenar Üçgendir değil.");
+    else 
+      System.out.print("Eşkenar Üçgendir değil.");
+	}
+	
 }
