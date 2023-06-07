@@ -27,4 +27,33 @@ public class Main
       System.out.println("Sayı 0 ile 100 arasında değildir.");
 	}
 	
+	// Soru _ Klavyeden girilen x'e göre y'nin değerini ekrana yazdıran program.
+  // y = k * x + t
+  // x < 0 --> k = 2 && t = 0
+  // 0 <= x <= 5 --> k = -1 && t = 10
+  // x > 5 --> k = 3 && t = -20
+	public static void soru2() {
+    java.util.Scanner kb = new java.util.Scanner(System.in);
+    int x, y, k, t;
+    
+    System.out.print("x = ");
+    x = kb.nextInt();
+        
+    if(x < 0) {
+      k = 2;
+      t = 0;
+    } else 
+      if(x <= 5) {
+        k = -1;
+        t = 10;
+      } else {
+        k = 3;
+        t = -20; 
+      }
+        
+    y = k * x + t;
+    
+    System.out.print("y = " + y);
+	}
+	
 }
