@@ -131,11 +131,11 @@ public class Main
         
     if(a == b)
       if(a == c)
-          System.out.print("Eşkenar Üçgendir.");
+          System.out.print("Eşkenardır.");
       else
-        System.out.print("Eşkenar Üçgendir değil.");
+        System.out.print("Eşkenar değildir.");
     else 
-      System.out.print("Eşkenar Üçgendir değil.");
+      System.out.print("Eşkenar değildir.");
 	}
 	
 }
