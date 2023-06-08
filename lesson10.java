@@ -93,7 +93,7 @@ public class Main
   // (a - b) * (a - c)
   // (b - a) * (b - c)
   // (c - a) * (c - b)
-	public static void soru2Kısayol() {
+	public static void soru2Kisayol() {
   	java.util.Scanner kb = new java.util.Scanner(System.in);
     int a, b, c;
     
