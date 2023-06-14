@@ -93,7 +93,40 @@ public class Main
                         System.out.println(i);
         		  
         }
-		  
+        
+        // Soru _ klavyeden a ve b degerleri giriliyor. a < b, a == b, a > b olabilir. Her durumda a dan b ye kadar olan sayıları ekrana yazdıran program  
+	public static void soru8() {
+                java.util.Scanner kb = new java.util.Scanner(System.in);
+                int i, a, b;
+                
+                System.out.print("a = ");
+                a = kb.nextInt();
+                
+                System.out.print("b = ");
+                b = kb.nextInt();
+                
+                if(a < b)
+                        for(i = a; i <= b; i++)
+                                System.out.print(i + " ");
+                else 
+                        for(i = a; i >= b; i--)
+                                System.out.print(i + " ");
+	}
+	
+	  // Soru _ n klavyeden girilen pozitif bir sayıdır. n çift ise 0 dan n ye kadar olan çift sayıları, n tek ise 1 den n ye kadar olan tek sayıları ekrana yazdıran program
+	public static void soru9() {
+                java.util.Scanner kb = new java.util.Scanner(System.in);
+                int i, n;
+                
+                System.out.print("n = ");
+                n = kb.nextInt();
+                
+                
+                for(i = n % 2; i <= n; i += 2)
+                        System.out.print(i + " ");
+	}
+	
+	  
 	
 }
 
