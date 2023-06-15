@@ -127,6 +127,25 @@ public class Main
 	}
 	
 	  
-	
+        // Soru _ Klavyeden a ve b degerleri giriliyor. a < b olduğu kabul ediliyor. a ile b arasındaki 5 in katlarını ekrana yazdıran program.
+        public static void soru10() {
+                java.util.Scanner kb = new java.util.Scanner(System.in);
+                double i, a, b;
+                
+                System.out.print("a = ");
+                a = kb.nextInt();
+                
+                System.out.print("b = ");
+                b = kb.nextInt();
+                
+                for(i = (a / 5 + 1) * 5; i < b; i += 5)
+                        System.out.print(i + " "); 
+                
+                // ikinci yöntem
+                for(i = a + (5 - a % 5); i < b; i += 5)
+                        System.out.print(i + " ");
+        }
+}
+
 }
 
