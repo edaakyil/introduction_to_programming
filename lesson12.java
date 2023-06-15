@@ -2,6 +2,8 @@
 
 public class Main
 {
+	
+	public static void main(String[] args) { }
   
   // Soru _ 1 ile 100 rasındaki 3'ün 4'ün ve 5'in katlarını ekrana iç içe yazdıran program
 	public static void soru1() {
@@ -15,8 +17,19 @@ public class Main
 	    if(i % 5 == 0) 
 		    System.out.print(i + " ");
 		}
-    
-
+	}
+	
+	// Soru _ 1 ile 100 rasındaki 3'ün 4'ün ve 5'in katlarını ekrana iç içe yazdıran program Ama sayı tekrarı olmayacak
+	public static void soru2() {
+		int i;
+		
+		for(i = 1; i <= 100; i++)
+		  if(i % 3 == 0) 
+		    System.out.print(i + " ");  
+	    else if(i % 4 == 0) 
+		    System.out.print(i + " ");
+	    else if(i % 5 == 0) 
+		    System.out.print(i + " ");
 	}
 	
 }
