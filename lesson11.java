@@ -145,7 +145,12 @@ public class Main
                 for(i = a + (5 - a % 5); i < b; i += 5)
                         System.out.print(i + " ");
         }
-}
+
 
 }
 
+/*	a ile b arasındaki n'nin katlarını yazdırma:
+
+	for(i = a + (5 - a % 5); i < b; i += 5)
+      		System.out.print(i + " ");
+*/
