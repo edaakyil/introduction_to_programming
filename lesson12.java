@@ -16,6 +16,15 @@ public class Main
 		    System.out.print(i + " ");
 	    if(i % 5 == 0) 
 		    System.out.print(i + " ");
+			
+			// Sonuç değişmez
+			for(i = 1; i <= 100; i++){
+		  if(i % 5 == 0) 
+		    System.out.print(i + " ");
+	    if(i % 4 == 0) 
+		    System.out.print(i + " ");
+	    if(i % 3 == 0) 
+		    System.out.print(i + " ");
 		}
 	}
 	
@@ -30,6 +39,29 @@ public class Main
 		    System.out.print(i + " ");
 	    else if(i % 5 == 0) 
 		    System.out.print(i + " ");
+		
+		// Sonuç değişmez		
+		for(i = 1; i <= 100; i++)
+		  if(i % 5 == 0) 
+		    System.out.print(i + " ");  
+	    else if(i % 4 == 0) 
+		    System.out.print(i + " ");
+	    else if(i % 3 == 0) 
+		    System.out.print(i + " ");
+	}
+		
+	// Soru _ Fahrenheit cinsinden girilen sıcaklık değerinin Celcius karşılığını ekrana yazdıran program
+  // C = 5 / 9 * (F - 32)
+	public static void soru3() {
+    java.util.Scanner kb = new java.util.Scanner(System.in);
+    double f, c;
+    
+    System.out.print("Fahrenheit: ");
+    f = kb.nextInt();
+    
+    c = 5.0 / 9 * (f - 32);
+    
+    System.out.print("Celcius:" + c); 
 	}
 	
 }
