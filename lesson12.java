@@ -51,22 +51,36 @@ public class Main
 	}
 		
 	// Soru _ Fahrenheit cinsinden girilen sıcaklık değerinin Celcius karşılığını ekrana yazdıran program
-  // C = 5 / 9 * (F - 32)
-	public static void soru3() {
-    java.util.Scanner kb = new java.util.Scanner(System.in);
-    double f, c;
-    
-    System.out.print("Fahrenheit: ");
-    f = kb.nextDouble();
-    
-    c = 5.0 / 9 * (f - 32);  // c = 5.0 / 9.0 * (f - 32);
-    System.out.print("Celcius:" + c); 
-	}
+        // C = 5 / 9 * (F - 32)
+        public static void soru3() {
+                java.util.Scanner kb = new java.util.Scanner(System.in);
+                double f, c;
+                
+                System.out.print("Fahrenheit: ");
+                f = kb.nextDouble();
+                
+                c = 5.0 / 9 * (f - 32);  // c = 5.0 / 9.0 * (f - 32);
+                System.out.print("Celcius:" + c); 
+        }	
 	
+	// Soru _ n klavyeden girilen pozitif bir sayıdır. 1 den n ye kadar olan sayıların toplamını ekrana yazdıran program
+        public static void soru4() {
+                java.util.Scanner kb = new java.util.Scanner(System.in);
+                int i, n, sum;
+                
+                System.out.print("n = ");
+                n = kb.nextInt();
+                
+                sum = 0;
+                
+                for(i = 1; i <= n; i++)
+                        sum += i;
+                
+                System.out.print("Toplam: " + sum); 
+        }
+
+
 }
-
-
-
 
 /*	a ile b arasındaki n'nin katlarını yazdırma:
 		for(i = a + (5 - a % 5); i < b; i += 5)
