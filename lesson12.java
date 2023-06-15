@@ -57,10 +57,9 @@ public class Main
     double f, c;
     
     System.out.print("Fahrenheit: ");
-    f = kb.nextInt();
+    f = kb.nextDouble();
     
-    c = 5.0 / 9 * (f - 32);
-    
+    c = 5.0 / 9 * (f - 32);  // c = 5.0 / 9.0 * (f - 32);
     System.out.print("Celcius:" + c); 
 	}
 	
