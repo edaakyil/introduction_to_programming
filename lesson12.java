@@ -5,50 +5,51 @@ public class Main
 	
 	public static void main(String[] args) { }
   
-  // Soru _ 1 ile 100 rasındaki 3'ün 4'ün ve 5'in katlarını ekrana iç içe yazdıran program
-	public static void soru1() {
-		int i;
-		
-		for(i = 1; i <= 100; i++){
-		  if(i % 3 == 0) 
-		    System.out.print(i + " ");
-	    if(i % 4 == 0) 
-		    System.out.print(i + " ");
-	    if(i % 5 == 0) 
-		    System.out.print(i + " ");
-			
-			// Sonuç değişmez
-			for(i = 1; i <= 100; i++){
-		  if(i % 5 == 0) 
-		    System.out.print(i + " ");
-	    if(i % 4 == 0) 
-		    System.out.print(i + " ");
-	    if(i % 3 == 0) 
-		    System.out.print(i + " ");
-		}
-	}
+	// Soru _ 1 ile 100 rasındaki 3'ün 4'ün ve 5'in katlarını ekrana iç içe yazdıran program
+        public static void soru1() {
+                int i;
+                
+                for(i = 1; i <= 100; i++){
+                        if(i % 3 == 0) 
+                                System.out.print(i + " ");
+                        if(i % 4 == 0) 
+                                System.out.print(i + " ");
+                        if(i % 5 == 0) 
+                                System.out.print(i + " ");
+                }
+                
+                // Aşağıdaki gibi sırası değiştirildiğnde Sonuç değişmez
+                for(i = 1; i <= 100; i++){
+                        if(i % 5 == 0) 
+                                System.out.print(i + " ");
+                        if(i % 4 == 0) 
+                                System.out.print(i + " ");
+                        if(i % 3 == 0) 
+                                System.out.print(i + " ");
+                }
+        }
 	
 	// Soru _ 1 ile 100 rasındaki 3'ün 4'ün ve 5'in katlarını ekrana iç içe yazdıran program Ama sayı tekrarı olmayacak
-	public static void soru2() {
-		int i;
-		
-		for(i = 1; i <= 100; i++)
-		  if(i % 3 == 0) 
-		    System.out.print(i + " ");  
-	    else if(i % 4 == 0) 
-		    System.out.print(i + " ");
-	    else if(i % 5 == 0) 
-		    System.out.print(i + " ");
-		
-		// Sonuç değişmez		
-		for(i = 1; i <= 100; i++)
-		  if(i % 5 == 0) 
-		    System.out.print(i + " ");  
-	    else if(i % 4 == 0) 
-		    System.out.print(i + " ");
-	    else if(i % 3 == 0) 
-		    System.out.print(i + " ");
-	}
+        public static void soru2() {
+                int i;
+                
+                for(i = 1; i <= 100; i++)
+                        if(i % 3 == 0) 
+                                System.out.print(i + " ");  
+                        else if(i % 4 == 0) 
+                                System.out.print(i + " ");
+                        else if(i % 5 == 0) 
+                                System.out.print(i + " ");
+                
+                // Sonuç değişmez		
+                for(i = 1; i <= 100; i++)
+                        if(i % 5 == 0) 
+                                System.out.print(i + " ");  
+                        else if(i % 4 == 0) 
+                                System.out.print(i + " ");
+                        else if(i % 3 == 0) 
+                                System.out.print(i + " ");
+        }
 		
 	// Soru _ Fahrenheit cinsinden girilen sıcaklık değerinin Celcius karşılığını ekrana yazdıran program
         // C = 5 / 9 * (F - 32)
@@ -75,6 +76,22 @@ public class Main
                 
                 for(i = 1; i <= n; i++)
                         sum += i;
+                
+                System.out.print("Toplam: " + sum); 
+        }
+		
+	// Soru _ klavyeden girilen 5 sayıyı toplayan pogram
+        public static void soru5() {
+                java.util.Scanner kb = new java.util.Scanner(System.in);
+                int i, n, sum;
+                
+                sum = 0;
+                
+                for(i = 0; i < 5; i++) {
+                        System.out.print(i + ". sayı: ");
+                        n = kb.nextInt();
+                        sum += n;
+                }
                 
                 System.out.print("Toplam: " + sum); 
         }
