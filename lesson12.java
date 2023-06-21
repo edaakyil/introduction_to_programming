@@ -6,6 +6,7 @@ public class Main
 	public static void main(String[] args) { }
   
 	// Soru _ 1 ile 100 rasındaki 3'ün 4'ün ve 5'in katlarını ekrana iç içe yazdıran program
+	// Açıklama _ 3 4 5 6 8 9 10 12 12 15 15 16 18 20 20 21 24 24 25 27 28 30 30 32 33 ...
         public static void soru1() {
                 int i;
                 
