@@ -35,7 +35,7 @@ public class Main
         
         // Soru _ 5 elemanlı a[] dizisini 2 den başlayan çift sayıları değer olarak atlayan program
         // Açıklama _ 2 4 6 8 10
-	public static void soru() {
+	public static void soru1() {
 	        
 	      int a[] = new int[5];  
               int i;
@@ -49,7 +49,7 @@ public class Main
 	}
         
         // Soru _ Dizinin elemanlarının toplamını ekrana yazdıran program
-	public static void main(String[] args) {
+	public static void soru2() {
 	        
 	        int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
 	        int i , sum;
@@ -58,7 +58,23 @@ public class Main
 	        for(i = 0; i < 10; i++)
 	                sum += a[i];
 	                
-                System.out.print("Toplam = " + sum);
+                System.out.print("Toplam: " + sum);
+	}
+	
+	// Soru _ Dizinin elemanlarının toplamını ve ortalamasını ekrana yazdıran program
+	public static void soru3() {
+	        
+	        int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
+	        int i , sum, av;
+	        
+	        sum = 0;
+	        for(i = 0; i < 10; i++)
+	                sum += a[i];
+	                
+	         av = sum / i ;
+	         
+                System.out.println("Toplam = " + sum);
+                System.out.println("Ortalama = " + av);
 	}
 	
 }
