@@ -65,16 +65,116 @@ public class Main
 	public static void soru3() {
 	        
 	        int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
-	        int i , sum, av;
-	        
+	        int i , sum, avg, size;
+		
+		size = 10;
 	        sum = 0;
+
 	        for(i = 0; i < 10; i++)
 	                sum += a[i];
 	                
-	         av = sum / i ;
+	         av = sum / i ;  
+		// av = sum / size;
 	         
                 System.out.println("Toplam = " + sum);
                 System.out.println("Ortalama = " + av);
+	}
+	
+	// Soru _ Dizindeki tek sayıları ekrana yazdıran program
+	public static void soru4() {
+	        
+	        int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
+	        int i, size;
+	        size = 10;
+	        
+	        for(i = 0; i < size; i++)
+        	        if(a[i] % 2 != 0)
+                                System.out.println(a[i] + " ");
+	                
+	}
+	
+	// Soru _ Dizindeki tek sayıları ve tek sayıların adedini ekrana yazdıran program
+	public static void soru5() {
+	        
+	        int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
+	        int i, size, m;
+	        size = 10;
+	        
+	        m = 0;
+	        for(i = 0; i < size; i++)
+        	        if(a[i] % 2 != 0) {
+                                System.out.print(a[i] + " ");
+                                m ++;
+	                }
+                System.out.println( "\nTek sayıların adedi: " + m);
+	}
+	
+	// Soru _ Dizindeki tek sayıları, tek sayıların adedini, toplamını ve ortalamasını ekrana yazdıran program
+	public static void soru6() {
+	        
+	        int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
+	        int i, size, count, sum, avg;
+	        
+	        size = 10;
+	        count = 0;
+	        sum = 0;
+	        
+	        for(i = 0; i < size; i++)
+        	        if(a[i] % 2 != 0) {
+                                System.out.print(a[i] + " ");
+                                sum += a[i];
+                                count++;
+	                }
+	                
+                avg = sum / count;
+                
+                System.out.println( "\nTek sayıların adedi: " + count);
+                System.out.println( "Tek sayıların toplamı: " + sum);
+                System.out.println( "Tek sayıların otalaması: " + avg);
+	}
+	
+	        // Soru _ Klavyeden x ve y giriliyor. x < y olduğu kabul ediliyor. x'ten küçük y'den büyük dizi elemanlarını ekrana yazdıran program
+	public static void soru7() {
+	        java.util.Scanner kb = new java.util.Scanner(System.in);
+	        int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
+	        int i, x, y, size;
+	        size = 10;
+	        
+	        System.out.print("x = ");
+	        x = kb.nextInt();
+	        
+	        System.out.print("y = ");
+	        y = kb.nextInt();
+	        
+	         
+	        for(i = 0; i < size; i++) 
+	                if(a[i] > x)
+	                        if(a[i] < y)
+                                System.out.print(a[i] + " ");
+	        
+	}
+	
+        // Soru _ Klavyeden x ve y giriliyor. x < y olduğu kabul ediliyor. 
+        // x'ten küçük dizi elemanları ile y'den büyük dizi elemanlarını ekrana yazdıran program
+	public static void soru8() {
+	        java.util.Scanner kb = new java.util.Scanner(System.in);
+	        int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
+	        int i, x, y, size;
+	        size = 10;
+	        
+	        System.out.print("x = ");
+	        x = kb.nextInt();
+	        
+	        System.out.print("y = ");
+	        y = kb.nextInt();
+	        
+	         
+	        for(i = 0; i < size; i++) {
+	                if(a[i] < x)
+                                System.out.print(a[i] + " ");
+                        else if(a[i] > y)
+                                System.out.print(a[i] + " ");
+	        }
 	}
 	
 }
