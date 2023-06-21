@@ -31,6 +31,7 @@ public class Main
         }
 	
 	// Soru _ 1 ile 100 rasındaki 3'ün 4'ün ve 5'in katlarını ekrana iç içe yazdıran program Ama sayı tekrarı olmayacak
+	// Açıklama _ 3 4 5 6 8 9 10 12 15 16 18 20 21 24 25 27 28 30 32 33 ...
         public static void soru2() {
                 int i;
                 
@@ -61,7 +62,7 @@ public class Main
                 System.out.print("Fahrenheit: ");
                 f = kb.nextDouble();
                 
-                c = 5.0 / 9 * (f - 32);  // c = 5.0 / 9.0 * (f - 32);
+                c = 5.0 / 9 * (f - 32);  // c = 5.0 / 9.0 * (f - 32);    // Tür dönüşümü
                 System.out.print("Celcius:" + c); 
         }	
 	
