@@ -91,7 +91,7 @@ public class Main
                 
                 for(i = 0; i < 5; i++) {
                         System.out.print(i + ". sayı: ");
-                        n = kb.nextInt();
+                        n = kb.nextInt();  // Bir değişkene aynı anda bir değer atanabilir. Yeni değer atandığında eski değer silinir.
                         sum += n;
                 }
                 
