@@ -71,7 +71,6 @@ public class Main
 	
 	// Soru _ Dizinin ortalamasından küçük olan dizi elemanlarını ekrana yazdıran program
 	public static void soru4() {
-	        java.util.Scanner kb = new java.util.Scanner(System.in);
 	        int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
 	        int i, size, sum, avg;
 	        size = 10;
@@ -88,5 +87,68 @@ public class Main
                                 System.out.print(a[i] + " ");
 	}
         
+       // Soru _ Dizinin ilk yarısı ile ikinci yarısının toplamını ekrana yazdıran program
+	public static void soru5() {
+	        int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
+	        int i, size, sumFirst, sumSecond;
+	        size = 10;
+	        sum = 0;
+	        sumFirst = 0;
+	        sumSecond = 0;
+	        
+	        for(i = 0; i < size / 2; i++) {
+                        sumFirst += a[i];
+                        sumSecond += a[i + size / 2];
+                }  
+                
+                System.out.println("İlk yarının toplamı: " + sumFirst);
+                System.out.println("İkinci yarının toplamı: " + sumSecond);
+                
+	}
+	
+	// Soru _ Klavyeden girilen n adedi kadar Dizinin ilk elemanlarını ekrana yazdıran program
+	public static void soru6() {
+	        java.util.Scanner kb = new java.util.Scanner(System.in);
+	        int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
+	        int i, n;
+	        
+	        System.out.print("n = ");
+	        n = kb.nextInt();
+	        
+	        for(i = 0; i < n; i++) {
+                        System.out.print(a[i] + " ");
+                }  
+                
+	}
+	
+	// Soru _ Dizinin son n adet elemanını baştan sona doğru yazdıran program
+	public static void soru7() {
+	        java.util.Scanner kb = new java.util.Scanner(System.in);
+	        int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
+	        int i, n, size;
+	        size = 10;
+	        
+	        System.out.print("n = ");
+	        n = kb.nextInt();
+	        
+	        for(i = size - n; i < size; i++) 
+                        System.out.print(a[i] + " ");
+                
+	}
+	
+	// Soru _ Dizinin son n adet elemanını sondan başa doğru yazdıran program
+	public static void soru8() {
+	        java.util.Scanner kb = new java.util.Scanner(System.in);
+	        int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
+	        int i, n, size;
+	        size = 10;
+	        
+	        System.out.print("n = ");
+	        n = kb.nextInt();
+	        
+	        for(i = size - 1; i >= size - n; i--) 
+                        System.out.print(a[i] + " ");
+                
+	}
         
 }
