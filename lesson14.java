@@ -68,6 +68,25 @@ public class Main
                 System.out.println("Çift sayıların toplamı " + sumEven);
 	    
 	}
+	
+	// Soru _ Dizinin ortalamasından küçük olan dizi elemanlarını ekrana yazdıran program
+	public static void soru4() {
+	        java.util.Scanner kb = new java.util.Scanner(System.in);
+	        int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
+	        int i, size, sum, avg;
+	        size = 10;
+	        sum = 0;
+	        avg = 0;
+	        
+	        for(i = 0; i < size; i++) 
+	                sum += a[i];
+	                
+                avg = sum / size;
+	        
+	        for(i = 0; i < size; i++) 
+	                if(a[i] < avg) 
+                                System.out.print(a[i] + " ");
+	}
         
         
 }
