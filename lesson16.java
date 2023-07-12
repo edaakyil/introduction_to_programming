@@ -102,13 +102,9 @@ public class Main
 		System.out.print("n = ");
 		n = kb.nextInt();
 		
-		for(i = 0; i < size; i++) 
-		        System.out.print(a[i] + " ");
-		        System.out.println( " ");
-		
 		for(i = 0; i < n / 2; i++) {
-	        	temp = a[i + s];
-		        a[i + s] = a[s + n - 1 - i];
+	        	temp = a[s + i];
+		        a[s + i] = a[s + n - 1 - i];
 		        a[s + n - 1 - i] = temp;
 		 }      
 		 
