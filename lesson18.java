@@ -123,6 +123,7 @@ public class Main
                         System.out.print(a[i] +" ");
 	}
 
+	/// Selection Sort Algoritması ile
         // Soru _ Dizinin elemanlarını küçükten büyüğe doğru sıralayan program
 	public static void soru7() {
 		int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
@@ -148,6 +149,7 @@ public class Main
                         System.out.print(a[i] +" ");
 	}
 
+	/// Selection Sort Algoritması ile
         // Soru _ Dizinin elemanlarını küçükten büyüğe doğru sıralayan program
         // Her aşaması yazırılsın istersek:
 	public static void soru8() {
@@ -168,11 +170,72 @@ public class Main
                         
                         a[pMin] = a[k]; 
                         a[k] = min;
+
+			 for(i = 0; i < size; i++)
+                        	System.out.print(a[i] +" ");
+                	System.out.println();
                 }
 		                
-                for(i = 0; i < size; i++)
-                        System.out.print(a[i] +" ");
-                System.out.println();
+	}
+
+	/// Bubble Sort Algoritması ile
+        // Soru _ Dizinin elemanlarını küçükten büyüğe doğru sıralayan program
+        // Her aşaması yazırılsın istersek:
+	public static void soru9() {
+		int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
+		int i, k, size,temp;
+		size = 10;
+		
+		/// Aşağıdaki Algoritmanın adı "Bubble Sort" (Kabarcık Sıralama) dır.
+		// Bubble Sort --> Sırasıyla yan yana olan elemanlar karşılaştırılır ve 
+		// konumları birbirlerine göre doğru değilse yer değiştirirler. 
+		// Bu algoritmada hep en baştan başlanılır
+		for(i = 0; i < size - 1; i++) {
+        		
+        		for(k = 0; k < size - 1; k++) 
+        		        if(a[k + 1] < a[k]) {
+        		                temp = a[k];
+        		                a[k] = a[k + 1];
+        		                a[k + 1] = temp;
+        		                
+                                }
+                                
+                        for(k = 0; k < size; k++)
+                                System.out.print(a[k] +" ");
+                        System.out.println();
+                        
+                }
+	}
+
+	// 9. sorunun iyileştirilmiş hali (Gereksiz taramadan kurtuluyoruz)
+  	/// Bubble Sort Algoritması ile
+        // Soru _ Dizinin elemanlarını küçükten büyüğe doğru sıralayan program
+        // Her aşaması yazırılsın istersek:
+	public static void sioru10() {
+		int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
+		int i, k, size,temp;
+		size = 10;
+		
+		/// Aşağıdaki Algoritmanın adı "Bubble Sort" (Kabarcık Sıralama) dır.
+		// Bubble Sort --> Sırasıyla yan yana olan elemanlar karşılaştırılır ve 
+		// konumları birbirlerine göre doğru değilse yer değiştirirler. 
+		// Bu algoritmada hep en baştan başlanılır
+		for(i = 0; i < size - 1; i++) {
+        		
+        		// [size - 1 - i] diyerek Gereksiz taramadan kurtuluyoruz
+        		for(k = 0; k < size - 1 - i; k++) 
+        		        if(a[k + 1] < a[k]) {
+        		                temp = a[k];
+        		                a[k] = a[k + 1];
+        		                a[k + 1] = temp;
+        		                
+                                }
+                                
+                        for(k = 0; k < size; k++)
+                                System.out.print(a[k] +" ");
+                        System.out.println();
+                        
+                }
 	}
 	
 }
