@@ -17,6 +17,10 @@ public class Main
 		
 		for(i = 0; i < n; i++)
 		        a[(size - 1) - i] = a[(n - 1) - i];
+
+		// my comment
+		// for(i = 0; i < n; i++) 
+		//         a[i + size - n] = a[i];
 		
 		for(i = 0; i < size - n; i++)
 		        a[i] = 0;
