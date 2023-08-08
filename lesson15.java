@@ -72,7 +72,7 @@ public class Main
 
         // ---- !!!! CLEAN CODE -----
         //!! diziyi mod alarak n defa sola doğru kaydırır böylelikle bilgisayarı gereksiz yere çalıştırmamış oluyorsun
-        // Soru _ Dizinin elemanlarınnı n defa öne (bir basamak sola) kaydıran ve dizinin ilk elemanını dizinin sonuna atayan program.
+        // 💯✨ Soru _ Dizinin elemanlarını n defa öne (sola) kaydıran program.rogram.
         // n -> klavyeden girilen bir değerdir
 	public static void main(String[] args) {
 		java.util.Scanner kb = new java.util.Scanner(System.in);
