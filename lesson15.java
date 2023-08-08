@@ -30,7 +30,7 @@ public class Main
 		
 	}
 
-        // Soru _ Dizinin elemanlarınnı bir öne (bir basamak sola) kaydıran ve dizinin ilk elemanını dizinin sonuna atayan program.
+        // Soru _ Dizinin elemanlarını bir öne (bir basamak sola) kaydıran ve dizinin ilk elemanını dizinin sonuna atayan program.
 	public static void soru2() {
 		int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
 		int i,  n, size, temp;
@@ -47,7 +47,7 @@ public class Main
 		
 	}
 
-        // Soru _ Dizinin elemanlarınnı n defa öne (bir basamak sola) kaydıran ve dizinin ilk elemanını dizinin sonuna atayan program.
+        // Soru _ Dizinin elemanlarını n defa öne (sola) kaydıran program.
         // n -> klavyeden girilen bir değerdir
 	public static void soru3() {
 		java.util.Scanner kb = new java.util.Scanner(System.in);
