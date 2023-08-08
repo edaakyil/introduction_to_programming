@@ -87,7 +87,7 @@ public class Main
                                 System.out.print(a[i] + " ");
 	}
         
-       // Soru _ Dizinin ilk yarısı ile ikinci yarısının toplamını ekrana yazdıran program
+       // ✨💯 Soru _ Dizinin ilk yarısı ile ikinci yarısının toplamını ekrana yazdıran program
 	public static void soru5() {
 	        int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
 	        int i, size, sumFirst, sumSecond;
