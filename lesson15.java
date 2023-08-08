@@ -47,7 +47,7 @@ public class Main
 		
 	}
 
-        // Soru _ Dizinin elemanlarını n defa öne (sola) kaydıran program.
+        // 💯✨ Soru _ Dizinin elemanlarını n defa öne (sola) kaydıran program.
         // n -> klavyeden girilen bir değerdir
 	public static void soru3() {
 		java.util.Scanner kb = new java.util.Scanner(System.in);
