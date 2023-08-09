@@ -105,7 +105,24 @@ public class Main
                                         System.out.print(a[i] + ", ");
 	}
 
-                             //// Soru - 6 _ İki dizinin birleşimini ekrana yazdıran program
-        // cEVABI YARIN
+	// Soru - 6 _ İki dizinin birleşimini ekrana yazdıran program
+	public static void soru7() {
+       		//         0   1  2  3   4  5   6   7  8   9 
+                int a[] = {4,  8, 3, 1, 18, 9, 21, 20, 5, 17};  
+                int b[] = {8, 13, 6, 12, 4, 5, 19, 1, 14, 25};
+		int  i, k, size, n, flag;
+		size = 10;
+		   
+	        for(i = 0; i < size; i++) {
+                        System.out.print(a[i] + ", ");
+	                flag = 0;
+	                for(k = 0; k < size; k++)
+        	                if(b[i] == a[k])
+        	                        flag = 1;
+	                if(flag != 1)
+                                System.out.print(b[i] + ", ");
+                }
+	        
+        }
 	
 }
