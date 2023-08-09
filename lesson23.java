@@ -97,6 +97,49 @@ public class Main {
 
 
         //  // Soru _ Klavyeden girilen sayının basamaklarından elde edilebilecek en büyük sayıyı bulan ve bu sayıyı 2 ile çarpan program
-        // cevabı yarın
+        	public static void main(String[] args) {
+		java.util.Scanner kb = new java.util.Scanner(System.in);
+		int a[] = new int[10];
+		int n, digit, i, k, newn, size, max, pMax;
+		size = 0;
+		newn = 0;
+		
+	        System.out.print("Sayı: ");
+	        n = kb.nextInt();
+	        
+		while(n != 0) {
+		        digit = n % 10;
+		        n /= 10;
+		        a[size] = digit;
+		        size++;
+	        }
+	        
+	        for(i = 0; i < size - 1; i++){
+	                max = a[i];
+	                pMax = i;
+	                for(k = i + 1; k < size; k++)
+	                        if(max < a[k]) {
+	                                max = a[k];
+	                                pMax = k;
+	                        }
+                        a[pMax] = a[i];
+                        a[i] = max;
+                }
+	                        
+	                
+	        
+                System.out.println();
+	        for(i = 0; i < size; i++)
+	                System.out.print(a[i] + " ");
+	                
+                newn = 0;
+                System.out.println();
+	        for(i = 0; i < size; i++)
+	                newn = a[i] + newn * 10;
+                System.out.println(newn);
+	        
+	        
+	        
+        }
         
 }
