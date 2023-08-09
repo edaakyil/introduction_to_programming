@@ -22,10 +22,7 @@ public class Main {
         		         b[pe] = a[i];
         		         pe--;
 		         }
-		 
-		for(i = 0; i < size; i++) 
-		        System.out.print(a[i] + " ");
-	        System.out.println(" ");
+
 		for(i = 0; i < size; i++) 
 		        System.out.print(b[i] + " ");
 	
