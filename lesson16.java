@@ -89,7 +89,7 @@ public class Main
 		
 	}
 
-        // Soru _ klavyeden s ve n giriliyor. Dizinin s nolu elemanından başlayarak n adet elemanı kendi içinde tersine çeviren program.
+        // ✨💯 Soru _ klavyeden s ve n giriliyor. Dizinin s nolu elemanından başlayarak n adet elemanı kendi içinde tersine çeviren program.
 	public static void soru5() {
 		java.util.Scanner kb = new java.util.Scanner(System.in);
 		int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
