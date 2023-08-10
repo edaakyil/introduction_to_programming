@@ -105,7 +105,7 @@ public class Main
                                         System.out.print(a[i] + ", ");
 	}
 
-	// Soru - 6 _ İki dizinin birleşimini ekrana yazdıran program
+	// 💯✨ Soru - 6 _ İki dizinin birleşimini ekrana yazdıran program
 	public static void soru7() {
        		//         0   1  2  3   4  5   6   7  8   9 
                 int a[] = {4,  8, 3, 1, 18, 9, 21, 20, 5, 17};  
