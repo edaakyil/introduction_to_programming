@@ -63,7 +63,7 @@ public class Main
                         System.out.print(a[i] + " ");
 	}
 
-        // Soru 4 _ 10 dan küçük üretilen 1000 adet rastgele sayının kaçını tek kaçının çift olduğunu ekrana yazdıran ye kaçının yerinde kaldığını program
+        // Soru 4 _ Diziyi bin defa karıştırdıktan sonra elemanların kaçı yerinde kalmıştır
 	public static void soru4() {
 	        java.util.Random generator = new java.util.Random();
 	        int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
