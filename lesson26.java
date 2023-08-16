@@ -43,7 +43,7 @@ public class Main
                 System.out.println("Tek sayıların adedi: " + countOdd);
 	}
 
-        // Soru 3 _ 10 dan küçük üretilen 1000 adet rastgele sayının kaçını tek kaçının çift olduğunu ekrana azdıran program
+        // Soru 3 _ iki tane indis numarası üreterek 1000 defa dizinin elemanlarının yerini değiştiren program
 	public static void soru3() {
 	        java.util.Random generator = new java.util.Random();
 	        int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
