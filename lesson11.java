@@ -112,8 +112,9 @@ public class Main
                         for(i = a; i >= b; i--)
                                 System.out.print(i + " ");
 	}
-	
-	  // Soru _ n klavyeden girilen pozitif bir sayıdır. n çift ise 0 dan n ye kadar olan çift sayıları, n tek ise 1 den n ye kadar olan tek sayıları ekrana yazdıran program
+
+	// 💥💯✨💢
+	//  Soru _ n klavyeden girilen pozitif bir sayıdır. n çift ise 0 dan n ye kadar olan çift sayıları, n tek ise 1 den n ye kadar olan tek sayıları ekrana yazdıran program
 	public static void soru9() {
                 java.util.Scanner kb = new java.util.Scanner(System.in);
                 int i, n;
@@ -126,7 +127,7 @@ public class Main
                         System.out.print(i + " ");
 	}
 	
-	  
+	// 💥💯✨💢
         // Soru _ Klavyeden a ve b degerleri giriliyor. a < b olduğu kabul ediliyor. a ile b arasındaki 5 in katlarını ekrana yazdıran program.
         public static void soru10() {
                 java.util.Scanner kb = new java.util.Scanner(System.in);
